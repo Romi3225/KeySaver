@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int key;
+string key;
 char choice;
 int backup;
 
@@ -59,18 +59,20 @@ int main()
 				exit(1);
 			}
 
-			switch (choice)
+			
+			if (choice == 'y')
 			{
-			case 'y':
 				backup = 1;
-				break;
-			case 'n':
+			}
+			else if (choice == 'n')
+			{
 				backup = 0;
 				std::cout << "\nEnter your new Key:";
 				std::cin >> key;
 				std::cout << "\n" << key << " is your new key\n";
-				break;
-			default:
+			}
+			else
+			{
 				std::cout << "Please enter a valid option\n";
 			}
 		} while (backup != 1);
