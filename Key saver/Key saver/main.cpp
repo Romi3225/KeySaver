@@ -77,7 +77,7 @@ int main()
 			}
 		} while (backup != 1);
 
-		std::cout << "Suscesfully loged in";
+		std::cout << "Successfully loged in";
 	} 
 	return 0;
 }
